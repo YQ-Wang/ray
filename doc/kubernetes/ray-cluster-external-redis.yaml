@@ -17,7 +17,7 @@ spec:
   - name: gcs-server
     protocol: TCP
     port: 6380
-    targetPort: 6379
+    targetPort: 6380
   selector:
     component: ray-head
 ---
