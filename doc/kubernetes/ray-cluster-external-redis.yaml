@@ -61,7 +61,7 @@ spec:
           imagePullPolicy: IfNotPresent
           command: [ "/bin/bash", "-c", "--" ]
           args:
-            - "ray start --head --num-cpus=$MY_CPU_REQUEST --object-manager-port=22345 --node-manager-port=22346 --dashboard-host=0.0.0.0 --block"
+            - "ray start --head --port=6380 --num-cpus=$MY_CPU_REQUEST --dashboard-host=0.0.0.0 --block"
           ports:
             - containerPort: 6380 # GCS server
             - containerPort: 10001 # Used by Ray Client
