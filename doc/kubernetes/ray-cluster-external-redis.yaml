@@ -63,7 +63,7 @@ spec:
           args:
             - "ray start --head --num-cpus=$MY_CPU_REQUEST --object-manager-port=22345 --node-manager-port=22346 --dashboard-host=0.0.0.0 --block"
           ports:
-            - containerPort: 6379 # Redis port
+            - containerPort: 6380 # GCS server
             - containerPort: 10001 # Used by Ray Client
             - containerPort: 8265 # Used by Ray Dashboard
 
